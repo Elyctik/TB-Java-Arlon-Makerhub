@@ -1,5 +1,6 @@
 package be.technobel.makerhub.makerhub.dal.entities;
 
+import be.technobel.makerhub.makerhub.dal.Enum.UserRole;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,6 +9,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 
 @Entity
@@ -21,5 +23,6 @@ public class Personne {
     private String prenom;
     private String sexe;
     private LocalDate dateDeNaissance;
+    private Set<UserRole> roles;
 
 }

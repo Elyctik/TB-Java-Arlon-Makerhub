@@ -4,10 +4,11 @@ import be.technobel.makerhub.makerhub.api.models.forms.AdresseForm;
 import be.technobel.makerhub.makerhub.dal.entities.Adresse;
 import be.technobel.makerhub.makerhub.dal.repositories.AdresseRepository;
 import be.technobel.makerhub.makerhub.dal.repositories.PersonneRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class AdresseServiceImpl implements AdresseService{
 
     private AdresseRepository adresseRepository;
